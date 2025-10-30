@@ -3,93 +3,92 @@
 <head>
   <meta charset="UTF-8">
   <title>Kenichi Mizobuchi</title>
-  
-<div class="navbar">
-  <a href="index.html">Home</a>
-  <a href="profile.html">Profile</a>
-  <a href="research.html">Research</a>
-  <a href="lecture.html">Lecture</a>
-  <a href="link.html">Link</a>
-</div>
 
-  
-<style>
-  body {
-    font-family: "Hiragino Maru Gothic ProN", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Helvetica Neue", Arial, sans-serif;
-    color: #222;
-    background-color: #fff;
-    margin: 60px 40px;
-    line-height: 1.8;
-    font-size: 15px;
-  }
+  <style>
+    body {
+      font-family: "Hiragino Maru Gothic ProN", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Helvetica Neue", Arial, sans-serif;
+      color: #222;
+      background-color: #fff;
+      margin: 60px 40px;
+      line-height: 1.8;
+      font-size: 15px;
+      padding-top: 70px; /* 👈 ナビバー分の余白を追加 */
+    }
 
-  h2 {
-    font-size: 28px;
-    font-weight: 600;
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 0.3em;
-    margin-bottom: 1em;
-  }
+    /* 🌊 ナビゲーションバー */
+    .navbar {
+      background-color: #001a33; /* 濃い紺 */
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 16px 30px;
+      text-align: right;
+      box-sizing: border-box;
+      z-index: 1000;
+    }
 
-  /* 🌿 リンクカラーをグレーに変更 */
-  a {
-    color: #555; /* ← 好みで #666 や #777 にしてもOK */
-    text-decoration: none;
-  }
+    .navbar a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 12px;
+      letter-spacing: 0.5px;
+      font-weight: 500;
+    }
 
-  a:hover {
-    color: #000; /* ← ホバー時に少し濃く */
-    text-decoration: underline;
-  }
+    .navbar a:hover {
+      text-decoration: underline;
+      opacity: 0.85;
+    }
 
-  hr {
-    border: none;
-    border-top: 1px solid #ddd;
-    margin: 1.5em 0;
-    width: 100%;
-  }
+    h2 {
+      font-size: 28px;
+      font-weight: 600;
+      /* 👇 下線を削除 */
+      border: none;
+      padding-bottom: 0.3em;
+      margin-bottom: 1em;
+    }
 
-  footer {
-    margin-top: 3em;
-    font-size: 0.9em;
-    color: #666;
-    border-top: 1px solid #ddd;
-    padding-top: 1em;
-  }
-/* 🌊 ナビゲーションバー */
-.navbar {
-  background-color: #001a33; /* 濃い紺 */
-  position: fixed; /* スクロールしても上に固定（不要なら削除） */
-  top: 0;
-  left: 0;
-  width: 100%; /* 画面の左右いっぱい */
-  padding: 16px 30px;
-  text-align: right; /* 右寄せ */
-  box-sizing: border-box; /* paddingを幅に含める */
-  z-index: 1000; /* 上に固定 */
-}
+    a {
+      color: #555;
+      text-decoration: none;
+    }
 
-/* 🌿 リンク部分 */
-.navbar a {
-  color: #fff;
-  text-decoration: none;
-  margin-left: 20px;
-  font-size: 12px; /* 👈 小さめフォント */
-  letter-spacing: 0.5px; /* 少し間隔を開けると上品 */
-  font-weight: 500;
-}
+    a:hover {
+      color: #000;
+      text-decoration: underline;
+    }
 
-.navbar a:hover {
-  text-decoration: underline;
-  opacity: 0.85;
-}
+    hr {
+      border: none;
+      border-top: 1px solid #ddd;
+      margin: 1.5em 0;
+      width: 100%;
+    }
 
-  
-</style>
+    footer {
+      margin-top: 3em;
+      font-size: 0.9em;
+      color: #666;
+      border-top: 1px solid #ddd;
+      padding-top: 1em;
+    }
+  </style>
 </head>
 
 <body>
-  <br>
+
+  <!-- 🌊 ナビゲーションバー（headの中から移動してここに置く） -->
+  <div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="profile.html">Profile</a>
+    <a href="research.html">Research</a>
+    <a href="lecture.html">Lecture</a>
+    <a href="link.html">Link</a>
+  </div>
+
   <h2>Kenichi Mizobuchi</h2>
 
   <p>Professor<br>
@@ -105,7 +104,7 @@
 
   <hr>
 
-  <p><br>
+  <p>
     <a href="profile.html">Profile</a><br><br>
     <a href="#">Research</a><br><br>
     <a href="#">Lecture</a><br><br>
@@ -119,5 +118,6 @@
     4-2, Bunkyo cho, Matsuyama, Ehime, 790-8578, Japan<br>
     Copyright (C) 2004–2025 Kenichi Mizobuchi.</p>
   </footer>
+
 </body>
 </html>
