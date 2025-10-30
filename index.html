@@ -56,26 +56,34 @@
     border-top: 1px solid #ddd;
     padding-top: 1em;
   }
+/* 🌊 ナビゲーションバー */
 .navbar {
-  background-color: #001f3f; /* 濃い紺 */
-  overflow: hidden;
-  padding: 20px 40px; /* 上下・左右の余白で帯の太さ調整 */
+  background-color: #001a33; /* 濃い紺 */
+  position: fixed; /* スクロールしても上に固定（不要なら削除） */
+  top: 0;
+  left: 0;
+  width: 100%; /* 画面の左右いっぱい */
+  padding: 16px 30px;
+  text-align: right; /* 右寄せ */
+  box-sizing: border-box; /* paddingを幅に含める */
+  z-index: 1000; /* 上に固定 */
 }
 
-/* 各リンクのデザイン */
+/* 🌿 リンク部分 */
 .navbar a {
-  color: #fff; /* 白文字 */
+  color: #fff;
   text-decoration: none;
-  margin-right: 30px; /* リンク間のスペース */
+  margin-left: 20px;
+  font-size: 12px; /* 👈 小さめフォント */
+  letter-spacing: 0.5px; /* 少し間隔を開けると上品 */
   font-weight: 500;
-  font-size: 16px;
 }
 
-/* ホバー時（マウスを乗せたとき） */
 .navbar a:hover {
   text-decoration: underline;
   opacity: 0.85;
 }
+
   
 </style>
 </head>
